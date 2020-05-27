@@ -1,5 +1,6 @@
 require(adegenet)
-#convert file to gtx, while doing so make sure that all specimen from same group are together. If you used PGDspider, make sure that a populations definition file is used and make sure the popmap is organized as follows:
+#convert file to gtx, while doing so make sure that all specimen from same group are together. If you used PGDspider, make 
+#sure that a populations definition file is used and make sure the popmap is organized as follows:
 #pop1_1 pop1
 #pop1_2 pop1
 #pop2_1 pop2
@@ -8,13 +9,15 @@ require(adegenet)
 #pop3_2 pop3
 #pop4_1 pop4
 #pop4_2 pop4
-#where pop1 and pop2 belong to the same group and same for pop3 and pop4. If, for example, pop1 and pop3 are in the same group, then pop3 should follow pop1, then pop2 and pop4. Some is the case for how the popdata file should be arrange. She more details about the popdata file in the readme.
+#where pop1 and pop2 belong to the same group and same for pop3 and pop4. If, for example, pop1 and pop3 are in the same 
+#group, then pop3 should follow pop1, then pop2 and pop4. Some is the case for how the popdata file should be arrange. 
+#More details about the popdata file in the readme.
 
 object1 <- read.genetix("/path/to/myOrganism.gtx")
 #optional important method for structure formated file, but more options have to be entered for use with caution and patients.
 #object1 <- read.structure("/path/to/myOrganism.stru", n.ind = 82, n.loc = 2000, onerowperind = FALSE, col.lab = 1, col.pop = 2, row.marknames = 1, NA.char = "-9", ask = FALSE)
 
-popnames <- read.csv("/home/biogeoanalysis/RAD/spicatumPhylogeography/06populations_9snps_50miss_inPop/PCA_popdata_reduced.csv")
+popnames <- read.csv("/path/to/PCA_popdata.csv")
 
 X <- tab(object1, freq = TRUE, NA.method = "mean")
 
