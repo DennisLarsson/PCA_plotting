@@ -11,25 +11,7 @@ now convert the file.
 then use the R script PCA.R to compute the components plot them.
 
 but to make sure we get an informative plot you first have to prepare a csv (comma separated vector) file with how you want 
-to color and shape each individual in the plot. This is an example of how one can arrange a csv file (except columns are separated by commas):
-
-ind                 pop        popshape     popcolor  region        regionshape   regioncolor
-PspD47_1_RAD7       PspD47     1            1         SPIC_A        1             red
-PspD47_2_RAD7       PspD47     1            1         SPIC_A        1             red
-PspD47_3_RAD7       PspD47     1            1         SPIC_A        1             red
-PspD47_4_RAD7       PspD47     1            1         SPIC_A        1             red
-PspCP5_1_RAD9       PspCP5     2            2         SPIC_A        1             red
-PspCP5_2_RAD6       PspCP5     2            2         SPIC_A        1             red
-PspCP5_3_RAD6       PspCP5     2            2         SPIC_A        1             red
-PspGMS171_1_RAD1    PspGMS171  3            3         SPIC_S        2             black
-PspGMS171_2_RAD2    PspGMS171  3            3         SPIC_S        2             black
-PspGMS171_3_RAD2    PspGMS171  3            3         SPIC_S        2             black
-PspGMS171_5_RAD3_2  PspGMS171  3            3         SPIC_S        2             black
-PspCP969_2_RAD2     PspCP969   4            4         SPIC_S        2             black
-PspCP969_3_RAD8     PspCP969   4            4         SPIC_S        2             black
-PspCP969_4_RAD8     PspCP969   4            4         SPIC_S        2             black
-PspCP969_5_RAD8     PspCP969   4            4         SPIC_S        2             black
-
+to color and shape each individual in the plot. See example_popdata.csv for an example.
 
 The first column is where you want to enter (copy paste) your individual name.
 The second column is the name of the population.
