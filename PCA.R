@@ -36,15 +36,11 @@ barplot(pca1$eig[1:10], xlab="component", ylab="eigen value")
 ###PC1 vs PC2 labels
 indvnames <- as.vector(labels(pca1$li)[[1]])
 
-plot.default(x=pca1$li[,1], y=pca1$li[,2], xlab="PC1", ylab="PC2",xlim=c(min(pca1$li,1),max(pca1$li,1)), ylim=c(min(pca1$li,2),max(pca1$li,2)))
-text(pca1$li[,1], pca1$li[,2], labels=indvnames, cex= 0.7, pos = 4, main = "PCA plot of PC1 vs PC2 text labels")
+plot.default(x=pca1$li[,1], y=pca1$li[,2], xlab="PC1", ylab="PC2",xlim=c(min(pca1$li,1),max(pca1$li,1)), ylim=c(min(pca1$li,2),max(pca1$li,2)), main = "PCA plot of PC1 vs PC2 text labels")
+text(pca1$li[,1], pca1$li[,2], labels=indvnames, cex= 0.7, pos = 4)
 
-plot.default(x=pca1$li[,1], y=pca1$li[,3], xlab="PC1", ylab="PC3",xlim=c(min(pca1$li,1),max(pca1$li,1)), ylim=c(min(pca1$li,3),max(pca1$li,3)))
-text(pca1$li[,1], pca1$li[,3], labels=indvnames, cex= 0.7, pos = 4, main = "PCA plot of PC1 vs PC3 text labels")
-
-#plot.default(x=pca1$li[,2], y=pca1$li[,3], xlab="PC2", ylab="PC3",xlim=c(min(pca1$li,2),max(pca1$li,2)), ylim=c(min(pca1$li,3),max(pca1$li,3)))
-#text(pca1$li[,2], pca1$li[,3], labels=indvnames, cex= 0.7, pos = 4, main = "PCA plot of PC2 vs PC3 text labels")
-
+plot.default(x=pca1$li[,1], y=pca1$li[,3], xlab="PC1", ylab="PC3",xlim=c(min(pca1$li,1),max(pca1$li,1)), ylim=c(min(pca1$li,3),max(pca1$li,3)), main = "PCA plot of PC1 vs PC3 text labels")
+text(pca1$li[,1], pca1$li[,3], labels=indvnames, cex= 0.7, pos = 4)
 
 #-------------------------------------------------------------------------------------------------------------------
 ###PC1 vs PC2 region
