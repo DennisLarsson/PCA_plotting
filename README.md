@@ -45,34 +45,22 @@ You also can't have more color/shape categories than you have groups (for exampl
 populations within a group) the maximum number of categories that you can have is the same number of groups you have (the 
 number of categories shown in the legend).
 
-Secondly, individuals belonging to the same group has to be next to each other in the list. For example, this works:
-
+Secondly, individuals belonging to the same group has to be next to each other in the list. For example, this works (download and open in text editor if format is weird):
 ind1 pop1 1 3 south 1 blue
-
 ind2 pop1 1 3 south 1 blue
-
 ind3 pop2 2 2 west  2 red
-
 ind4 pop2 2 2 west  2 red
 
 but this won't work:
-
 ind1 pop1 1 3 south 1 blue
-
 ind3 pop2 2 2 west  2 red
-
 ind4 pop2 2 2 west  2 red
-
 ind2 pop1 1 3 south 1 blue
 
 and in regards to the first point, about categories, this is an example of what won't work:
-
 ind1 pop1 1 3 south 1 blue
-
 ind2 pop1 1 4 south 1 blue
-
 ind3 pop2 2 2 west  2 red
-
 ind4 pop2 2 2 west  5 red
 
 
@@ -82,7 +70,7 @@ color for the population (3,4 and 2) and more than two categories of shape for r
 If your individuals aren't aligned like mentioned in the second point, you have to realign them (copy paste) in the .gtx file 
 before running the script (scroll to the very bottom of the gtx to find the actual individuals).
 
-if you have something like this:
+if you have something like this (download and open in text editor if format is weird):
 D47
 2
 D471       110110 130130 120120 130130 130130 130130
@@ -110,4 +98,4 @@ CP969
 CP9692     000000 130130 120120 130130 130130 130130
 CP9693     110110 130130 120120 130130 130130 130130
 
-be patient, it is very difficult for the computer to work in the gtx file with so much information so it will be very slow.
+Be patient, it is very difficult for the computer to work in the gtx file with so much information so it will be very slow.
