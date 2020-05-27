@@ -46,14 +46,12 @@ populations within a group) the maximum number of categories that you can have i
 number of categories shown in the legend).
 
 Secondly, individuals belonging to the same group has to be next to each other in the list. For example, this works:
-
 ind1 pop1 1 3 south 1 blue
 ind2 pop1 1 3 south 1 blue
 ind3 pop2 2 2 west  2 red
 ind4 pop2 2 2 west  2 red
 
 but this won't work:
-
 ind1 pop1 1 3 south 1 blue
 ind3 pop2 2 2 west  2 red
 ind4 pop2 2 2 west  2 red
