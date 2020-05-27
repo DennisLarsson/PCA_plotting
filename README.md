@@ -46,22 +46,35 @@ populations within a group) the maximum number of categories that you can have i
 number of categories shown in the legend).
 
 Secondly, individuals belonging to the same group has to be next to each other in the list. For example, this works:
+
 ind1 pop1 1 3 south 1 blue
+
 ind2 pop1 1 3 south 1 blue
+
 ind3 pop2 2 2 west  2 red
+
 ind4 pop2 2 2 west  2 red
 
 but this won't work:
+
 ind1 pop1 1 3 south 1 blue
+
 ind3 pop2 2 2 west  2 red
+
 ind4 pop2 2 2 west  2 red
+
 ind2 pop1 1 3 south 1 blue
 
 and in regards to the first point, about categories, this is an example of what won't work:
+
 ind1 pop1 1 3 south 1 blue
+
 ind2 pop1 1 4 south 1 blue
+
 ind3 pop2 2 2 west  2 red
+
 ind4 pop2 2 2 west  5 red
+
 
 you can see that we have two categories, either pop1 and pop2 or south and west, but we have more than two categories of 
 color for the population (3,4 and 2) and more than two categories of shape for regions (1,2 and 5).
