@@ -3,6 +3,7 @@ library(adegenet)
 
 setwd("/path/to/workDirectory/")
 infile<-"spicatum.stru"
+outputfile.name <-"spicatum"
 #system(paste("sed -i '1d' ",infile,".stru",sep = ""))
 #system(paste("sed -i 's/ -9/ 9/g' ",infile,".stru",sep = ""))
 #system(paste("sed -i 's/-9 /9 /g' ",infile,".stru",sep = ""))
@@ -22,7 +23,7 @@ powerVal1 = round((pca1$eig[1]/sum(pca1$eig))*100,digits = 2)
 powerVal2 = round((pca1$eig[2]/sum(pca1$eig))*100,digits = 2)
 powerVal3 = round((pca1$eig[3]/sum(pca1$eig))*100,digits = 2)
 
-pdf(file=paste("PCA_",infile,".pdf",sep=""), height = 8, width = 8, title = infile)
+pdf(file=paste("PCA_",outputfile.name,".pdf",sep=""), height = 8, width = 8, title = infile)
 #------------------------------------------------------------------------------------------------------------------
 ###Barplot of eigenvalues
 barplot(pca1$eig[1:10], xlab="component", ylab="eigen value")
