@@ -11,7 +11,7 @@ outputfile.name <-"spicatum"
 popnames <- read.csv("/path/to/spicatum.csv")
 
 #make sure to edit n.ind to the number of individuals your dataset has and n.loc to the number of loci you have.
-object1 <- read.structure(paste(infile,".stru",sep=""), n.ind = 89, n.loc = 29494, onerowperind = FALSE, col.lab = 1, col.pop = 2, row.marknames = 0, 
+object1 <- read.structure(infile, n.ind = 89, n.loc = 29494, onerowperind = FALSE, col.lab = 1, col.pop = 2, row.marknames = 0, 
                           NA.char = "9", ask = FALSE)
 
 X <- tab(object1, freq = TRUE, NA.method = "mean")
