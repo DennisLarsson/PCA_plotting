@@ -1,4 +1,6 @@
 # PCA_plotting
+
+version 1.1
 R script to calculate principal components and plot them in R
 
 For the PCA you first need to have a gtx (genetix) file, this can be most easily achieve by converting it in PGDspider. when
