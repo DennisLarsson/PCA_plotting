@@ -4,15 +4,12 @@ library(adegenet)
 setwd("/path/to/workDirectory/")
 infile<-"spicatum.stru"
 outputfile.name <-"spicatum"
-#system(paste("sed -i '1d' ",infile,".stru",sep = ""))
-#system(paste("sed -i 's/ -9/ 9/g' ",infile,".stru",sep = ""))
-#system(paste("sed -i 's/-9 /9 /g' ",infile,".stru",sep = ""))
-#system(paste("sed -i 's/\t/ /g' ",infile,".stru",sep = ""))
+
 popnames <- read.csv("/path/to/spicatum.csv")
 
 #make sure to edit n.ind to the number of individuals your dataset has and n.loc to the number of loci you have.
-object1 <- read.structure(infile, n.ind = 89, n.loc = 29494, onerowperind = FALSE, col.lab = 1, col.pop = 2, row.marknames = 0, 
-                          NA.char = "9", ask = FALSE)
+object1 <- read.structure(infile, n.ind = 89, n.loc = 29494, onerowperind = FALSE, col.lab = 1, col.pop = 2, row.marknames = 1, 
+                          NA.char = "-9", ask = FALSE)
 
 X <- tab(object1, freq = TRUE, NA.method = "mean")
 
